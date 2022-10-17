@@ -1,0 +1,162 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.background1 {
+  /* background-image: url('./images/mobile-background1.jpg'); */
+
+  /* background-repeat: no-repeat; */
+  background: #f9f8f9;
+}
+
+.navbar {
+  padding: 1em;
+  margin-left: 10px;
+}
+
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  display: none;
+}
+
+.home-container {
+  padding: 1em;
+}
+
+.hello {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  color: #f81504;
+  font-weight: 600;
+  margin: 0;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  color: #7b7b7b;
+  border: 3px solid white;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.date {
+  color: #545454;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.place {
+  color: #6f6f6f;
+  font-size: 11px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.program {
+  background: #272a31;
+}
+
+.main-program {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+.program-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  background: #3d3f46;
+  column-gap: 7px;
+
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(1px);
+  padding: 0.5em;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.write-icon {
+  height: 40px;
+  width: 40px;
+  justify-self: center;
+}
+
+.characters-icon {
+  height: 45px;
+  width: 45px;
+  justify-self: center;
+}
+
+.program-title {
+  color: #ff4c3b;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.program-description {
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+
+.program-link {
+  display: none;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.join-button {
+  border: none;
+  padding: 1em;
+  background-color: #ff4e38;
+  color: white;
+  height: 60px;
+  margin: 30px 0 30px 0;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 768px) {
+  .program-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  .program-card {
+    margin: 0 5px 0 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
