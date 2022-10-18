@@ -20,8 +20,51 @@ body {
   height: 30px;
 }
 
+.logo,
+.campaign-button {
+  display: none;
+}
+
 nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background: rgba(236, 82, 66, 0.7453580901856764) 0%;
+  backdrop-filter: blur(5px);
+}
+
+.mobile-exit {
+  height: 16px;
+  width: 16px;
+  float: right;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.primary-nav {
+  list-style: none;
+  margin-top: 2em;
+}
+
+.primary-nav li {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: gray;
 }
 
 .home-container {
@@ -150,7 +193,7 @@ nav {
 .program-description {
   color: white;
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 15px;
   letter-spacing: 0.02em;
 }
@@ -269,6 +312,29 @@ footer {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
+  .background1 {
+    background-image: url('./images/desktop-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-nav,
+  .mobile-exit {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
   .program-container {
     display: flex;
     flex-direction: row;

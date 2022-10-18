@@ -1,0 +1,239 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.background1 {
+  background-image: url('./images/mobile-background1.jpg');
+  background-repeat: no-repeat;
+
+  /* background: #f9f8f9; */
+}
+
+.navbar {
+  padding: 1em;
+  margin-left: 10px;
+}
+
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  display: none;
+}
+
+.home-container {
+  padding: 1em;
+}
+
+.hello {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ec5242;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-title {
+  color: #f81504;
+  font-weight: 700;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #7b7b7b;
+  border: 2px solid #efefef;
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact,
+.contact2 {
+  font-size: 10px;
+  line-height: 20px;
+  color: #6b6b6b;
+}
+
+.contact {
+  margin-bottom: 0;
+}
+
+.contact2 {
+  margin: 0;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 10px;
+  color: #636363;
+}
+
+.red-line-container {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.red-line {
+  height: 5px;
+  width: 18px;
+}
+
+.logo-title1,
+.logo-title2 {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.logo-title1 {
+  margin: 20px 0 0 0;
+}
+
+.logo-title2 {
+  margin: 5px 0 10px 0;
+}
+
+.logo-subtitle {
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #7b7b7b;
+  background-color: #fff;
+  margin: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  border: 1px solid #ededed;
+  padding: 1em;
+  margin: 20px 0 30px 0;
+  height: 80px;
+}
+
+.past-submits {
+  border-top: 1px solid #ebebeb;
+}
+
+.past-submit-title {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.past-submit-subtitle {
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #7b7b7b;
+  background-color: #fff;
+  margin: 0;
+}
+
+.past-submits-container {
+  margin: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-image1 {
+  margin: 10px;
+  width: 290px;
+  height: 160px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.first-submit-container {
+  position: relative;
+  text-align: center;
+}
+
+.past-image-content1,
+.past-image-content2 {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.second-submit-container {
+  position: relative;
+  text-align: center;
+}
+
+.partners {
+  background-color: #414246;
+}
+
+.partner-title {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+
+.partners-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  padding: 10px 0 30px 0;
+  margin: 0 20px 0 20px;
+}
+
+.mozilla-logo,
+.google-logo,
+.naver-logo,
+.daumkakao-logo,
+.airbnb-logo {
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
+.footer-description {
+  font-size: 10px;
+  line-height: 15px;
+  color: #7b7b7b;
+  background-color: #fff;
+}
+
+.footer-title {
+  margin: 10px 0 0 0;
+}
+
+.rights {
+  margin: 0;
+}
