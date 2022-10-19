@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-Currently not available
+[Capstone 1 Project: Creative Writting Course](https://paulinagonzalezc.github.io/capstone-one/)
 
 ## Getting Started
 
@@ -23,6 +23,8 @@ To get a local copy up and running:
 ```sh
 git clone https://github.com/paulinagonzalezc/capstone-one.git
 ```
+
+Set it up localy.
 
 ## Authors
 
