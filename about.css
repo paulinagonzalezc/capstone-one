@@ -44,6 +44,14 @@ nav {
   text-align: center;
 }
 
+.red-line-about {
+  display: none;
+}
+
+.subtitle-wrapper {
+  margin: 2em 1em 2em 1em;
+}
+
 .subtitle {
   font-size: 12px;
   line-height: 20px;
@@ -52,7 +60,6 @@ nav {
   border: 2px solid #efefef;
   background-color: #fff;
   padding: 1em;
-  margin-top: 1em;
 }
 
 .info {
@@ -60,19 +67,12 @@ nav {
   text-align: center;
 }
 
-.contact,
-.contact2 {
+.contact {
   font-size: 10px;
   line-height: 20px;
   color: #6b6b6b;
-}
-
-.contact {
+  padding: 0 70px 0 70px;
   margin-bottom: 0;
-}
-
-.contact2 {
-  margin: 0;
 }
 
 .email {
@@ -92,20 +92,13 @@ nav {
   width: 18px;
 }
 
-.logo-title1,
-.logo-title2 {
+.logo-title {
   color: #262626;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-}
-
-.logo-title1 {
-  margin: 20px 0 0 0;
-}
-
-.logo-title2 {
-  margin: 5px 0 10px 0;
+  padding: 0 80px 0 80px;
+  margin: 20px 0 10px 0;
 }
 
 .logo-subtitle {
@@ -115,6 +108,7 @@ nav {
   color: #7b7b7b;
   background-color: #fff;
   margin: 0;
+  padding: 0 80px 0 80px;
 }
 
 .logo-wrapper {
@@ -122,7 +116,7 @@ nav {
   justify-content: center;
 }
 
-.logo {
+.logo2 {
   border: 1px solid #ededed;
   padding: 1em;
   margin: 20px 0 30px 0;
@@ -148,6 +142,7 @@ nav {
   color: #7b7b7b;
   background-color: #fff;
   margin: 0;
+  padding: 0 80px 0 80px;
 }
 
 .past-submits-container {
@@ -276,6 +271,7 @@ nav {
   }
 
   .primary-nav li {
+    padding: 10px;
     font-size: 11px;
     font-weight: 400;
   }
@@ -308,6 +304,8 @@ nav {
     height: 42px;
     width: 140px;
     margin: 0;
+    padding: 0;
+    border: none;
   }
 
   .course-button {
@@ -317,5 +315,91 @@ nav {
     padding: 5px 10px 5px 10px;
     justify-self: center;
     border: 3px solid #f81504;
+  }
+
+  .hello {
+    display: none;
+  }
+
+  .main-title {
+    color: #f81504;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .first-line {
+    margin: 30px 0 0 0;
+  }
+
+  .second-line {
+    margin: 0 0 10px 0;
+  }
+
+  .red-line-about {
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .subtitle-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 20px;
+    width: 500px;
+    text-align: center;
+    color: #7b7b7b;
+    border: 2px solid #efefef;
+    background-color: #fff;
+    padding: 1em;
+    margin-top: 1em;
+  }
+
+  .info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: 10px;
+    line-height: 20px;
+    color: #6b6b6b;
+    margin-bottom: 0;
+  }
+
+  .email {
+    font-weight: 500;
+    font-size: 10px;
+    color: #636363;
+  }
+
+  /* LOGO CSS */
+
+  .past-submits-container {
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    margin: 0;
+    padding: 30px 0 30px 0;
+  }
+
+  .footer-description {
+    color: #adadad;
+    background: none;
   }
 }
