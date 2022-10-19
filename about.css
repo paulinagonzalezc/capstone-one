@@ -237,3 +237,85 @@ nav {
 .rights {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .background1 {
+    background-image: url('./images/desktop-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-nav,
+  .mobile-exit {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 0 10px 10px gainsboro;
+  }
+
+  .primary-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .primary-nav li {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .menu-link {
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .menu-link:hover {
+    color: gray;
+  }
+
+  .about-link {
+    color: #f81504;
+  }
+
+  .logo,
+  .course-button {
+    display: flex;
+  }
+
+  .logo-tag {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 42px;
+    width: 140px;
+    margin: 0;
+  }
+
+  .course-button {
+    text-decoration: none;
+    color: #f81504;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+    justify-self: center;
+    border: 3px solid #f81504;
+  }
+}

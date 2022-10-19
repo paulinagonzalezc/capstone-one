@@ -21,8 +21,12 @@ body {
 }
 
 .logo,
-.campaign-button {
+.course-button {
   display: none;
+}
+
+nav.menu-btn {
+  display: block;
 }
 
 nav {
@@ -329,14 +333,121 @@ footer {
   }
 
   nav {
-    display: block;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
     background-color: #fff;
+    align-items: center;
+    box-shadow: 0 10px 10px gainsboro;
+  }
+
+  .primary-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
+  }
+
+  .primary-nav li {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .menu-link {
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .menu-link:hover {
+    color: gray;
+  }
+
+  .about-link {
+    color: #f81504;
+  }
+
+  .logo,
+  .course-button {
+    display: flex;
+  }
+
+  .logo-tag {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 42px;
+    width: 140px;
     margin: 0;
   }
 
+  .course-button {
+    text-decoration: none;
+    color: #f81504;
+    font-size: 11px;
+    padding: 5px 10px 5px 10px;
+    justify-self: center;
+    border: 3px solid #f81504;
+  }
+
+  .home-container {
+    padding: 2em 5em 2em 6em;
+  }
+
+  .hello {
+    font-size: 23px;
+    font-weight: 300;
+    color: #ec5242;
+    margin-bottom: 5px;
+  }
+
+  .main-title {
+    color: #f81504;
+    font-weight: 700;
+    margin: 0;
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+    line-height: 20px;
+    color: #7b7b7b;
+    border: 3px solid white;
+    background-color: #f6f6f7;
+    width: 418px;
+    padding: 1em;
+    margin-top: 1em;
+  }
+
+  .info {
+    margin-bottom: 50px;
+  }
+
+  .date {
+    color: #545454;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .place {
+    color: #6f6f6f;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
   .program-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1px;
     flex-direction: row;
     margin: 20px;
     height: 180px;
@@ -354,5 +465,94 @@ footer {
 
   .program-description {
     text-align: center;
+    height: 90px;
+  }
+
+  .button-wrapper {
+    display: none;
+  }
+
+  .program-link {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    font-size: 11px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 40px 0 60px 0;
+  }
+
+  .featured-speakers {
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+  }
+
+  .speakers-container {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    column-gap: 2px;
+    row-gap: 10px;
+    margin: 0;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  .partners {
+    display: block;
+    background-color: #414246;
+  }
+
+  .partner-title {
+    padding: 20px 0 10px 0;
+    color: #909092;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .partners-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    padding: 10px 0 30px 0;
+    margin: 0 20px 0 20px;
+  }
+
+  .mozilla-logo,
+  .google-logo,
+  .naver-logo,
+  .daumkakao-logo,
+  .airbnb-logo {
+    padding: 10px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #f2f2f2;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+
+  .footer-description {
+    font-size: 10px;
+    line-height: 15px;
+    color: #7b7b7b;
+  }
+
+  .footer-title {
+    margin: 10px 0 0 0;
+  }
+
+  .rights {
+    margin: 0;
   }
 }

@@ -34,7 +34,7 @@
             src="./images/close-icon.svg"
             alt="close-navigation"
           />
-          <a href="#">
+          <a href="#" class="logo-tag">
             <img
               id="logo"
               class="logo"
@@ -44,7 +44,9 @@
           </a>
           <ul class="primary-nav">
             <li>
-              <a id="menu-about" class="menu-link" href="#about">About</a>
+              <a id="menu-about" class="menu-link about-link" href="about.html"
+                >About</a
+              >
             </li>
             <li>
               <a id="menu-program" class="menu-link" href="#program">Program</a>
@@ -59,7 +61,7 @@
               <a id="menu-news" class="menu-link" href="#news">News</a>
             </li>
           </ul>
-          <a href="#" class="campaign-button">CC Campaing</a>
+          <a href="#" class="course-button">Log Course</a>
         </nav>
       </section>
       <section class="home-page">
@@ -82,12 +84,13 @@
         </div>
       </section>
     </div>
-    <section class="program">
+    <section class="program" id="program">
       <h2 class="main-program">Main Program</h2>
       <div class="red-line-container">
         <img class="red-line" src="./images/red-line.png" alt="red-line" />
       </div>
       <div class="program-container">
+        <div></div>
         <div class="program-card">
           <img
             id="write-icon"
@@ -153,6 +156,7 @@
             professors. Network with your peers and professors.
           </p>
         </div>
+        <div></div>
       </div>
       <div class="button-wrapper">
         <button class="join-button">Join Cohort Course 2022</button>
@@ -223,17 +227,46 @@
 
     <section class="partners">
       <div class="partner-title">Partner</div>
+      <div class="red-line-container">
+        <img class="red-line" src="./images/red-line.png" alt="red-line" />
+      </div>
+      <div class="partners-container">
+        <img
+          class="mozilla-logo"
+          src="./images/mozilla-logo.png"
+          alt="mozilla-logo"
+        />
+        <img
+          class="google-logo"
+          src="./images/google-logo.png"
+          alt="google-logo"
+        />
+        <img
+          class="naver-logo"
+          src="./images/naver-logo.png"
+          alt="naver-logo"
+        />
+        <img
+          class="daumkakao-logo"
+          src="./images/daumkakao-logo.png"
+          alt="daumkakao-logo"
+        />
+        <img
+          class="airbnb-logo"
+          src="./images/airbnb-logo.png"
+          alt="airbnb-logo"
+        />
+      </div>
     </section>
-    <footer>
-      <div class="footer-logo"></div>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="airbnb-logo" src="./images/logo2.png" alt="airbnb-logo" />
+      </div>
       <div class="footer-description">
-        <p class="">2022 Cretive commons Korea. Some Rights Reserved.</p>
-        <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi
-        </p>
+        <p class="footer-title">2022 Creative Writting Course</p>
+        <p class="rights">Some Rights Reserved</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
