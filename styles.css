@@ -4,8 +4,8 @@ body {
 }
 
 .background1 {
-  background-image: url('./images/mobile-background1.jpg');
-  background-repeat: no-repeat;
+  background-image: url('./images/desktop-background.png');
+  background-size: cover;
 
   /* background: #f9f8f9; */
 }
@@ -23,6 +23,10 @@ body {
 .logo,
 .course-button {
   display: none;
+}
+
+.logo {
+  width: 120px;
 }
 
 nav.menu-btn {
@@ -183,6 +187,7 @@ nav {
 }
 
 .network-icon {
+  padding: 5px 0 0 0;
   height: 40px;
   width: 40px;
   justify-self: center;
@@ -253,6 +258,12 @@ nav {
   font-size: 13px;
 }
 
+.speaker-image {
+  height: 80px;
+  width: 80px;
+  justify-self: center;
+}
+
 .red-line-speaker {
   height: 5px;
   width: 18px;
@@ -270,18 +281,6 @@ nav {
   font-size: 9px;
   margin: 3px 0 5px 0;
   line-height: 11px;
-}
-
-.speaker1 {
-  height: 80px;
-  width: 80px;
-  justify-self: center;
-}
-
-.speaker2 {
-  height: 80px;
-  width: 80px;
-  justify-self: center;
 }
 
 .more-button {
@@ -316,12 +315,6 @@ footer {
 /* DESKTOP VERSION */
 
 @media (min-width: 768px) {
-  .background1 {
-    background-image: url('./images/desktop-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
   .navbar {
     margin: 0;
     padding: 0;
@@ -397,11 +390,11 @@ footer {
   }
 
   .home-container {
-    padding: 2em 5em 2em 6em;
+    padding: 3em 5em 3em 10em;
   }
 
   .hello {
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 300;
     color: #ec5242;
     margin-bottom: 5px;
@@ -415,12 +408,12 @@ footer {
   }
 
   .subtitle {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 20px;
     color: #7b7b7b;
     border: 3px solid white;
     background-color: #f6f6f7;
-    width: 418px;
+    width: 490px;
     padding: 1em;
     margin-top: 1em;
   }
@@ -431,9 +424,9 @@ footer {
 
   .date {
     color: #545454;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin: 20px 0 10px 0;
   }
 
   .place {
@@ -461,6 +454,7 @@ footer {
 
   .program-title {
     justify-self: center;
+    margin-bottom: 0;
   }
 
   .program-description {
@@ -540,6 +534,15 @@ footer {
     display: flex;
     justify-content: center;
     padding: 20px 0 20px 0;
+  }
+
+  .footer-logo-wrapper {
+    margin-right: 15px;
+  }
+
+  .footer-logo {
+    width: 130px;
+    height: 50px;
   }
 
   .footer-description {

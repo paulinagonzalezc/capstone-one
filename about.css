@@ -4,10 +4,8 @@ body {
 }
 
 .background1 {
-  background-image: url('./images/mobile-background1.jpg');
-  background-repeat: no-repeat;
-
-  /* background: #f9f8f9; */
+  background-image: url('./images/desktop-background.png');
+  background-size: cover;
 }
 
 .navbar {
@@ -20,8 +18,55 @@ body {
   height: 30px;
 }
 
+.logo,
+.course-button {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
 nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background: rgba(236, 82, 66, 0.7453580901856764) 0%;
+  backdrop-filter: blur(5px);
+}
+
+.mobile-exit {
+  height: 16px;
+  width: 16px;
+  float: right;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.primary-nav {
+  list-style: none;
+  margin-top: 2em;
+}
+
+.primary-nav li {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: gray;
 }
 
 .home-container {
@@ -53,8 +98,8 @@ nav {
 }
 
 .subtitle {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 18px;
   text-align: center;
   color: #7b7b7b;
   border: 2px solid #efefef;
@@ -218,6 +263,19 @@ nav {
   margin: 20px 0 20px 0;
 }
 
+.footer-logo-wrapper {
+  margin-right: 15px;
+}
+
+.footer-logo {
+  width: 130px;
+  height: 50px;
+}
+
+.footer-logo-wrapper-white {
+  display: none;
+}
+
 .footer-description {
   font-size: 10px;
   line-height: 15px;
@@ -234,12 +292,6 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .background1 {
-    background-image: url('./images/desktop-background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
   .navbar {
     margin: 0;
     padding: 0;
@@ -317,6 +369,10 @@ nav {
     border: 3px solid #f81504;
   }
 
+  .home-container {
+    padding: 1em 1em 3em 1em;
+  }
+
   .hello {
     display: none;
   }
@@ -324,12 +380,12 @@ nav {
   .main-title {
     color: #f81504;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
   }
 
   .first-line {
-    margin: 30px 0 0 0;
+    margin: 60px 0 0 0;
   }
 
   .second-line {
@@ -345,13 +401,13 @@ nav {
   .subtitle-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 
   .subtitle {
     font-size: 12px;
     line-height: 20px;
-    width: 500px;
+    width: 600px;
     text-align: center;
     color: #7b7b7b;
     border: 2px solid #efefef;
@@ -401,5 +457,19 @@ nav {
   .footer-description {
     color: #adadad;
     background: none;
+  }
+
+  .footer-logo-wrapper {
+    display: none;
+  }
+
+  .footer-logo-wrapper-white {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  .footer-logo-white {
+    width: 130px;
+    height: 50px;
   }
 }
