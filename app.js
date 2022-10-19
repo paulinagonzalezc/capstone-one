@@ -6,6 +6,7 @@ const programBtn = document.getElementById('menu-program');
 const joinBtn = document.getElementById('menu-join');
 const sponsorBtn = document.getElementById('menu-sponsor');
 const newsBtn = document.getElementById('menu-news');
+const projectHolder = document.querySelector('.speakers-container');
 
 const speakers = [
   {
@@ -84,3 +85,34 @@ sponsorBtn.addEventListener('click', () => {
 newsBtn.addEventListener('click', () => {
   nav.classList.remove('menu-btn');
 });
+
+const createCard = (speakers) => {
+  const card = `<div class="speaker-card">
+          <img
+            class="speaker-image"
+            src="${speakers.image}"
+            alt="${speakers.alt}"
+          />
+          <div class="speaker-content">
+            <h3 class="speaker-name">${speakers.name}</h3>
+            <p class="speaker-background">${speakers.background}</p>
+            <img
+              class="red-line-speaker"
+              src="./images/red-line.png"
+              alt="red-line"
+            />
+            <p class="speaker-description">
+              ${speakers.description}
+            </p>
+          </div>
+        </div>`;
+  projectHolder.innerHTML += card;
+};
+
+const populatePage = (arr) => {
+  for (let i = 0; i < arr.length; i += 1) {
+    createCard(arr[i]);
+  }
+};
+
+populatePage(speakers);

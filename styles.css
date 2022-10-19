@@ -6,8 +6,6 @@ body {
 .background1 {
   background-image: url('./images/desktop-background.png');
   background-size: cover;
-
-  /* background: #f9f8f9; */
 }
 
 .navbar {
@@ -120,7 +118,8 @@ nav {
 }
 
 .program {
-  background: #272a31;
+  background-image: url('./images/program-background.png');
+  background-size: cover;
 }
 
 .main-program {
@@ -154,8 +153,6 @@ nav {
   grid-template-columns: 1fr 1fr 3fr;
   background: #3d3f46;
   column-gap: 7px;
-
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(1px);
   padding: 0.5em;
   margin-bottom: 10px;
@@ -226,6 +223,10 @@ nav {
   cursor: pointer;
 }
 
+.featured-speakers {
+  background-color: #f8f8f8;
+}
+
 .speakers {
   font-size: 16px;
   font-weight: 400;
@@ -237,7 +238,8 @@ nav {
 
 .speakers-container {
   display: grid;
-  margin: 15px;
+  margin: 15px 15px 0 15px;
+  padding-bottom: 25px;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
   column-gap: 7px;
@@ -272,6 +274,7 @@ nav {
 .speaker-background {
   color: #ff4e38;
   font-style: italic;
+  font-weight: 500;
   font-size: 10px;
   margin: 5px 0 0 0;
 }
@@ -283,11 +286,15 @@ nav {
   line-height: 11px;
 }
 
+.more-button-wrapper {
+  padding-bottom: 30px;
+}
+
 .more-button {
   font-size: 10px;
   text-align: center;
   border: 1px solid #dfdfdf;
-  margin: 30px 10px;
+  margin: 30px 10px 0 10px;
   padding: 8px;
   color: #565557;
   display: flex;
@@ -304,15 +311,69 @@ nav {
   width: 18px;
 }
 
-footer {
-  display: none;
-}
-
 .partners {
-  display: none;
+  display: block;
+  background-color: #414246;
 }
 
-/* DESKTOP VERSION */
+.partner-title {
+  padding: 20px 0 10px 0;
+  color: #909092;
+  text-align: center;
+  font-size: 17px;
+}
+
+.partners-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  padding: 10px 0 30px 0;
+  margin: 0 20px 0 20px;
+}
+
+.mozilla-logo,
+.google-logo,
+.naver-logo,
+.daumkakao-logo,
+.airbnb-logo {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.footer-logo-wrapper {
+  margin-right: 15px;
+}
+
+.footer-logo {
+  width: 130px;
+  height: 50px;
+}
+
+.footer-description {
+  font-size: 10px;
+  line-height: 15px;
+  color: #7b7b7b;
+}
+
+.footer-title {
+  margin: 10px 0 0 0;
+}
+
+.rights {
+  margin: 0;
+}
 
 @media (min-width: 768px) {
   .navbar {
@@ -493,69 +554,5 @@ footer {
 
   .more-button {
     display: none;
-  }
-
-  .partners {
-    display: block;
-    background-color: #414246;
-  }
-
-  .partner-title {
-    padding: 20px 0 10px 0;
-    color: #909092;
-    text-align: center;
-    font-size: 17px;
-  }
-
-  .partners-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    padding: 10px 0 30px 0;
-    margin: 0 20px 0 20px;
-  }
-
-  .mozilla-logo,
-  .google-logo,
-  .naver-logo,
-  .daumkakao-logo,
-  .airbnb-logo {
-    padding: 10px;
-  }
-
-  footer {
-    display: flex;
-    background-color: #f2f2f2;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 20px 0;
-  }
-
-  .footer-logo-wrapper {
-    margin-right: 15px;
-  }
-
-  .footer-logo {
-    width: 130px;
-    height: 50px;
-  }
-
-  .footer-description {
-    font-size: 10px;
-    line-height: 15px;
-    color: #7b7b7b;
-  }
-
-  .footer-title {
-    margin: 10px 0 0 0;
-  }
-
-  .rights {
-    margin: 0;
   }
 }
