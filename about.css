@@ -8,6 +8,10 @@ body {
   background-size: cover;
 }
 
+.top-darkbar {
+  display: none;
+}
+
 .navbar {
   padding: 1em;
   margin-left: 10px;
@@ -302,6 +306,30 @@ nav {
     display: none;
   }
 
+  .top-darkbar {
+    background-color: #3e3e3e;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 150px;
+  }
+
+  .facebook-icon,
+  .twitter-icon {
+    height: 11px;
+    width: 11px;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+  }
+
+  .topbar-item {
+    color: white;
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+  }
+
   nav {
     position: relative;
     display: grid;
@@ -324,7 +352,7 @@ nav {
 
   .primary-nav li {
     padding: 10px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
   }
 

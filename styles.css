@@ -8,6 +8,10 @@ body {
   background-size: cover;
 }
 
+.top-darkbar {
+  display: none;
+}
+
 .navbar {
   padding: 1em;
   margin-left: 10px;
@@ -386,6 +390,30 @@ footer {
     display: none;
   }
 
+  .top-darkbar {
+    background-color: #3e3e3e;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 150px;
+  }
+
+  .facebook-icon,
+  .twitter-icon {
+    height: 11px;
+    width: 11px;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+  }
+
+  .topbar-item {
+    color: white;
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+  }
+
   nav {
     position: relative;
     display: grid;
@@ -407,7 +435,7 @@ footer {
   }
 
   .primary-nav li {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
   }
 
@@ -450,8 +478,13 @@ footer {
     border: 3px solid #f81504;
   }
 
+  .home-page {
+    display: flex;
+    flex-direction: column;
+  }
+
   .home-container {
-    padding: 3em 5em 3em 10em;
+    padding: 3em 5em 3em 15em;
   }
 
   .hello {
@@ -465,7 +498,7 @@ footer {
     color: #f81504;
     font-weight: 700;
     margin: 0;
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .subtitle {
@@ -544,7 +577,7 @@ footer {
 
   .speakers-container {
     display: grid;
-    padding: 40px;
+    padding: 40px 150px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr;
     column-gap: 2px;
