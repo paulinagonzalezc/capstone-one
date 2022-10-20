@@ -280,13 +280,14 @@ nav {
   font-style: italic;
   font-weight: 500;
   font-size: 10px;
-  margin: 5px 0 0 0;
+  margin: 0;
 }
 
 .speaker-description {
   color: #252525;
-  font-size: 9px;
-  margin: 3px 0 5px 0;
+  font-weight: 300;
+  font-size: 10px;
+  margin: 0 0 5px 0;
   line-height: 11px;
 }
 
@@ -577,12 +578,25 @@ footer {
 
   .speakers-container {
     display: grid;
-    padding: 40px 150px;
+    padding: 40px 100px 40px 100px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     column-gap: 2px;
     row-gap: 10px;
     margin: 0;
+    place-items: center;
+  }
+
+  .speaker-card {
+    display: grid;
+    grid-template-columns: 90px 362px;
+    column-gap: 5px;
+  }
+
+  .speaker-image {
+    height: 80px;
+    width: 80px;
+    justify-self: right;
   }
 
   .more-button {

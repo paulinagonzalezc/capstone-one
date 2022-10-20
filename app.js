@@ -10,7 +10,7 @@ const projectHolder = document.querySelector('.speakers-container');
 
 const speakers = [
   {
-    image: './images/person1.png',
+    image: './images/person1-back.png',
     alt: 'speaker1 photo',
     name: 'Beth Longworth',
     background: 'Senior Course Tutor',
@@ -18,7 +18,7 @@ const speakers = [
       'Longworth is a champion of new writing for the stage, and has judged new writing competitions.',
   },
   {
-    image: './images/person2.png',
+    image: './images/person2-back.png',
     alt: 'speaker2 photo',
     name: 'Amahd Chatterjee',
     background: 'Senior Course Tutor',
@@ -26,7 +26,7 @@ const speakers = [
       'Chatterjee has reviewed for the Dutch newspaper Trouw, and advises the literary festival of the Hague.',
   },
   {
-    image: './images/person3.png',
+    image: './images/person3-back.png',
     alt: 'speaker 3 photo',
     name: 'Diana Morgan',
     background: 'MA, MPhil, DPhil, FRSA',
@@ -34,14 +34,14 @@ const speakers = [
       'Fiction writer, literary critic, and founder of the MSt in Creative Writing.',
   },
   {
-    image: './images/person4.png',
+    image: './images/person4-back.png',
     alt: 'speaker4 photo',
     name: 'Claire Daycott',
     background: 'Senior Associate Tutor MA, FRSL',
     description: ' She is a Fellow of the Royal Society of Literature.',
   },
   {
-    image: './images/person5.png',
+    image: './images/person5-back.png',
     alt: 'speaker5 photo',
     name: 'Danielle Randmark',
     background: 'MA',
@@ -49,7 +49,7 @@ const speakers = [
       'Novelist and short story writer.She now teaches fiction writing at the City Lit.',
   },
   {
-    image: './images/person6.png',
+    image: './images/person6-back.png',
     alt: 'speaker6 photo',
     name: 'Maria Chan',
     background: 'MA, MPhil, PhD',
