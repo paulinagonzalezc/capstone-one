@@ -602,4 +602,13 @@ footer {
   .more-button {
     display: none;
   }
+
+  .footer {
+    padding: 60px 0 60px 0;
+  }
+
+  .footer-logo {
+    width: 170px;
+    height: 70px;
+  }
 }

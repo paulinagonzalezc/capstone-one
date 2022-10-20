@@ -481,7 +481,7 @@ nav {
   .footer {
     background-color: #2e2e2e;
     margin: 0;
-    padding: 30px 0 30px 0;
+    padding: 50px 0 50px 0;
   }
 
   .footer-description {
@@ -499,7 +499,7 @@ nav {
   }
 
   .footer-logo-white {
-    width: 130px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
   }
 }
